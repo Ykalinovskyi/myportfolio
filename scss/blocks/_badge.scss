@@ -1,0 +1,20 @@
+.badge {
+    padding: 2px 6px;
+    height: 19px;
+    
+    border-radius: 2px;
+    
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    color: #fff;
+
+    &--html {background-color: #414141;}
+    &--css {background-color: #39A0FF;}
+    &--scss {background-color: #DD6ADF;}
+    &--js {
+        background-color: #FFCE20;
+        color: #000000;
+    }
+    &--wordpress {background-color: #0F8CC6;}
+}
