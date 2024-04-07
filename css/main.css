@@ -110,10 +110,6 @@ button:focus {
   outline: #005fcc auto 1px;
 }
 
-p + p {
-  margin-top: 1em;
-}
-
 .container {
   width: 1230px;
   padding: 0 15px;
@@ -355,9 +351,19 @@ a.logo {
 .info-block {
   padding: 30px 30px 50px;
   background-color: #fbfbfb;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #000;
 }
 .info-block--accent {
   background-color: #f1f8fb;
+}
+.info-block__title {
+  margin-bottom: 20px;
+}
+.info-block p + p {
+  margin-top: 15px;
 }
 
 .btn,
@@ -386,6 +392,7 @@ a.btn--wide {
 .title {
   font-weight: 700;
   font-size: 28px;
+  line-height: 1;
 }
 
 .title-1 {
