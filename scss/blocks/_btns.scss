@@ -1,9 +1,12 @@
 .btn,
 a.btn {
-	display: inline-block;
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+
 	padding: 10px 20px;
 	border-radius: 80px;
-	background-color: #000000;
+	background-color: #039be5;
 
 	font-size: 16px;
 	font-weight: 700;
@@ -14,7 +17,7 @@ a.btn {
 	transition: background-color 0.2s ease-in;
 
 	&:hover {
-		background-color: #333;
+		background-color: #0370a6;
 	}
 
 	&--wide {

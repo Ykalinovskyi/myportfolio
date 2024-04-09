@@ -1,0 +1,30 @@
+.portfolio {
+}
+
+.portfolio__title {
+    margin-bottom: 30px;
+
+    @include mobile {
+        margin-bottom: 20px;
+    }
+}
+
+
+.portfolio__cads {
+    display: grid;
+    gap: 30px;
+    
+    // grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+
+    grid-template-columns: repeat(3, 1fr);
+
+    @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mobile {
+        grid-template-columns: 1fr;
+    }
+}
+
+

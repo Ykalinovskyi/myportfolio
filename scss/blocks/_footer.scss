@@ -1,20 +1,28 @@
 .footer {
-	padding: 60px 0;
+	padding: 20px 0;
 	background-color: #000;
-	color: #fff;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 14px;
 
 	@include mobile {
-		padding: 40px 0;
+		padding: 10px 0;
+		font-size: 12px;
 	}
 
 	a {
-		color: #fff;
+		color: rgba(255, 255, 255, 0.75);
+		text-decoration: none;
 	}
 }
 
-.footer__col {
+.footer__content {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	row-gap: 30px;
+	justify-content: space-between;
+	align-self: center;
+	column-gap: 30px;
+
+	@include mobile {
+		flex-direction: column;
+		row-gap: 10px;
+	}
 }
