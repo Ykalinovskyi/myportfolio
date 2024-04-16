@@ -24,3 +24,30 @@ a.btn {
 		width: 100%;
 	}
 }
+
+.btn-link, a.btn-link {
+	display: inline-block;
+	background-color: #f2f2f2;
+	border-radius: 3px;
+	padding: 6px 10px;
+		
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.3;
+	color: #000000;
+	text-decoration: none;
+
+	display: flex;
+	column-gap: 5px;
+	align-items: center;
+
+	transition: background-color 0.2s ease-in;
+
+	@include mobile {
+		padding: 10px;
+	}
+
+	&:hover {
+		background-color: #d4cfcf;
+	}
+}

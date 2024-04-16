@@ -9,7 +9,6 @@
 	<title>Портфолио Евгений Калиновский HTML-верстальщик</title>
 	<link rel="stylesheet" href="./css/main.css">
 	<link rel="stylesheet" href="./js/fancybox/fancybox.css">
-	<link rel="stylesheet" href="./js/tiny-slider/tiny-slider.css">
 
 	<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
 	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
@@ -18,7 +17,7 @@
 <body class="sticky-footer">
 
 	<header class="header" id="top">
-		<div class="container container--mobile-fluid">
+		<div class="container">
 			<div class="header__row">
 				
 				<a href="#!" class="header__logo logo">
@@ -28,13 +27,13 @@
 
 				<ul class="socials">
 					<li>
-						<a href="#"><img src="./img/icons/socials/email.svg" alt="емейл"></a>
+						<a href="mailto:ykalinovskyi@yandex.ru"><img src="./img/icons/socials/email.svg" alt="емейл"></a>
 					</li>
 					<li>
-						<a href="#"><img src="./img/icons/socials/github.svg" alt="гитхаб"></a>
+						<a href="https://github.com/Ykalinovskyi" target="_blank"><img src="./img/icons/socials/github.svg" alt="гитхаб"></a>
 					</li>
 					<li>
-						<a href="#"><img src="./img/icons/socials/telegram.svg" alt="телеграм"></a>
+						<a href="https://t.me/Ykalinovskyi"><img src="./img/icons/socials/telegram.svg" alt="телеграм"></a>
 					</li>
 				</ul>
 
@@ -46,7 +45,6 @@
 		<main class="main">
 			
 			<section class="main__info info">
-				
 				<div class="info__about info-block">
 					<h2 class="title info-block__title">Обо мне</h2>
 					<p>Я профессиональный HTML верстальщик сайтов, веб-разработчик. Верстаю с учетом последних трендов и технологий.</p>
@@ -75,10 +73,8 @@
 							<li>Постановка на WordPress</li>
 						</ul>
 					</div>
-
 				</div>
 				<!-- //skills -->
-			
 			</section>
 					
 			<section class="main__portfolio portfolio">
@@ -91,18 +87,18 @@
 						<div class="project__img">
 							<img src="./img/projects/travel/epic.jpg" srcset="./img/projects/travel/epic@2x.jpg 2x" alt="ЭпикТрэвел">
 						</div>
-						<h3 class="project__title"><a href="#">ЭпикТрэвел</a></h3>
+						<h3 class="project__title"><a href="#" data-fancybox="gallery" data-src="#modalEpic">ЭпикТрэвел</a></h3>
 				 		<p class="project__desc">Верстка сайта визитки. 4 страницы, форма обратной связи, мобильная адаптация, retina ready</p>
-						<p class="project__tags">HTML, CSS, PHP</p>
+						<p class="project__tags tags">HTML, CSS, PHP</p>
 					</li>
 
 					<li class="project">
 						<div class="project__img">
 							<img src="./img/projects/coworks/coworks.jpg" srcset="./img/projects/coworks/coworks@2x.jpg 2x" alt="Сайт коворкинга">
 						</div>
-						<h3 class="project__title"><a href="#">Сайт коворкинга</a></h3>
+						<h3 class="project__title"><a href="#" data-fancybox="gallery" data-src="#modalKowork">Сайт коворкинга</a></h3>
 						<p class="project__desc">Верстка лендинга для сайта коворкинга</p>
-						<p class="project__tags">HTML, SCSS, JS</p>	
+						<p class="project__tags tags">HTML, SCSS, JS</p>	
 					</li>
 			
 				</ul>
@@ -115,7 +111,7 @@
 					<p>Напишите мне, обсудим ваш проект</p>
 				</div>
 				<div class="cta__btn">
-				<a href="#!" class="btn">
+				<a href="https://t.me/Ykalinovskyi" class="btn">
 					<img src="./img/icons/telegram.svg" alt="telegram"> Telegram
 				</a>
 				</div>
@@ -132,28 +128,75 @@
 		</div>
 	</footer>
 
-	<section class="modal" id="modalWindow">
+	
+	<section class="modal" id="modalEpic">
 
-		<div class="modal__header">
-			<h2 class="modal__title">Заказать звонок</h2>
-			<p>Перезвоним в течении 15 минут</p>
+		<div class="modal__img">
+			<img src="./img/projects/travel/epic-lg.jpg" srcset="./img/projects/travel/epic-lg@2x.jpg 2x" alt="ЭпикТрэвел">
+		</div>
+		<div class="modal__content">
+			<h2 class="modal__title">ЭпикТрэвел</h2>
+			<div class="modal__text">
+				<p>Верстка сайта визитки. 3 страницы, форма обратной связи, мобильная адаптация, retina ready.</p>
+				<p>Страницы:</p>
+				<ul>
+					<li>
+						<a href="#">Главная</a>
+					</li>
+					<li>
+						<a href="#">Туры и направления</a>
+					</li>
+					<li>
+						<a href="#">О компании</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+				</ul>
+			</div>
+			<p class="modal__tags tags">HTML, SCSS, JS, PHP</p>
+
+			<div class="modal__links">
+				<a href="http://v97885nf.beget.tech/epic-travel-optimized/index.html" class="btn-link" target="_blank">
+					<img src="./img/icons/link.svg" alt="Смотреть демо">
+					Смотреть демо
+				</a>
+				<a href="#" class="btn-link" target="_blank">
+					<img src="./img/icons/site.svg" alt="Сайт клиента">
+					Сайт клиента
+				</a>
+				<a href="https://github.com/Ykalinovskyi/Epic-travel" class="btn-link" target="_blank">
+					<img src="./img/icons/github.svg" alt="GitHub проекта">
+					GitHub проекта
+				</a>
+			</div>
 		</div>
 
-		<form class="modal__inputs">
+	</section>
+	
+	<section class="modal" id="modalKowork">
 
-			<input type="text" class="input" placeholder="Имя">
-			<input type="tel" class="input" placeholder="Телефон">
-			<input type="email" class="input" placeholder="Email">
+		<div class="modal__img">
+			<img src="./img/projects/coworks/coworks-lg.jpg" srcset="./img/projects/coworks/coworks-lg@2x.jpg 2x" alt="Сайт коворкинга">
+		</div>
+		<div class="modal__content">
+			<h2 class="modal__title">Сайт коворкинга</h2>
+			<div class="modal__text">
+				<p>Верстка лендинга. Одностраничный сайт с информацией о коворкинге. Форма обратной связи, модальные окна, карта, аккордеон, адаптация под мобильные устройства, мобильная навигация.</p>
+			</div>
+			<p class="modal__tags tags">HTML, SCSS, JS</p>
 
-			<label class="modal__checkbox-label">
-				<input type="checkbox" class="real-checkbox visually-hidden">
-				<span class="fake-checkbox"></span>
-				<span>Согласен на обработку <a href="#">персональных данных</a></span>
-			</label>
-
-			<button class="btn">Оставить заявку</button>
-
-		</form>
+			<div class="modal__links">
+				<a href="http://v97885nf.beget.tech/coworks/index.html" class="btn-link" target="_blank">
+					<img src="./img/icons/link.svg" alt="Смотреть демо">
+					Смотреть демо
+				</a>
+				<a href="https://github.com/Ykalinovskyi/Coworks" class="btn-link" target="_blank">
+					<img src="./img/icons/github.svg" alt="GitHub проекта">
+					GitHub проекта
+				</a>
+			</div>
+		</div>
 
 	</section>
 
@@ -162,14 +205,11 @@
 	</a>
 
 	<!-- Vendors -->
-	<!-- <script src="./js/fancybox/fancybox.umd.js"></script>
-	<script src="./js/tiny-slider/tiny-slider.js"></script> -->
+	<script src="./js/fancybox/fancybox.umd.js"></script>
 
 	<!-- Скрипты -->
 	<script src="./js/scrollToTop.js"></script>
-	<!-- <script src="./js/tinySlider.js"></script> -->
-
-	<!-- <script src="./js/main.js"></script> -->
+	<script src="./js/main.js"></script>
 
 </body>
 

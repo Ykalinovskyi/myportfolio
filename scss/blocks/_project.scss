@@ -19,7 +19,8 @@
     img {
         width: 216px;
         height: 138px;
-         margin-top: -7px;
+        object-fit: cover;
+        margin-top: -7px;
     }
 }
 
@@ -55,9 +56,9 @@
     color: #000;
 }
 
-.project__tags {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.3;
-    color: #6b9db9;
-}
+// .project__tags {
+//     // font-weight: 400;
+//     // font-size: 12px;
+//     // line-height: 1.3;
+//     // color: #6b9db9;
+// }

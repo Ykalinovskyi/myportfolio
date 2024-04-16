@@ -6,6 +6,8 @@
 	}
 }
 
-.fancy-box-video {
-	
+.fancybox__nav {
+	@media(max-width: 789px) {
+		display: none;
+	}
 }

@@ -53,7 +53,7 @@
             padding-left: 15px;
 
             &::before {
-                content: "-";
+                content: "\2014"; //спец.символ для тире
                 position: absolute;
                 left: 0;
                 top: 0;
